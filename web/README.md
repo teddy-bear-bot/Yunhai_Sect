@@ -2,6 +2,8 @@
 
 现有 Blender 场景转换的 Three.js 网页漫游。原始 `.blend` 不变。
 
+在线体验：[云海仙宗 · 山海漫游](https://yunhai-sect.vercel.app/)（Vercel）。
+
 ## 启动
 
 ```sh
@@ -29,4 +31,4 @@ npm run dev
 
 ## 技术
 
-Three.js / three-mesh-bvh / Vite。发布为默认私有 Sites，访问权限未公开。完整可编辑源场景位于 `../blender/云海仙宗.blend`。
+Three.js / three-mesh-bvh / Vite。已部署至 Vercel。完整可编辑源场景位于 `../blender/云海仙宗.blend`。

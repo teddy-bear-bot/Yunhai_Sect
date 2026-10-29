@@ -4,6 +4,12 @@ A cultivation sect named "Yunhai Sect".
 
 中国仙侠宗门三维场景与可交互网页漫游：群山、宫殿、石阶、悬桥、松林和云海。
 
+## 在线体验
+
+[进入云海仙宗 · 山海漫游](https://yunhai-sect.vercel.app/)
+
+已部署至 Vercel，支持环绕观景与步行探索。
+
 ![云海仙宗](previews/云海仙宗-云层精修.png)
 
 ## 工程目录
@@ -48,8 +54,6 @@ npm run build
 
 原始 Blender 工程无需网页依赖即可打开和编辑。渲染参数与操作方法见 [使用说明](docs/使用说明.md)。
 
-[已发布的网页](https://cloud-sect-sanctuary.qztmapgxvijhu.chatgpt.site/) 当前采用创建者私有访问权限；克隆本仓库后可自行本地运行或部署。
-
 ## 部署到 Vercel
 
 1. 在 Vercel 新建项目，导入 `teddy-bear-bot/Yunhai_Sect`。
@@ -59,6 +63,6 @@ npm run build
 
 `web/vercel.json` 已提供构建配置。网页使用的 GLB 和 Draco 解码器均位于 `web/public/`，会随构建一起发布；Blender 工程和预览文档不在网页输出目录中。
 
-Sites 的私有访问权限不会随源码迁移到 Vercel；若需要限制访问，请在 Vercel 项目中另行配置访问保护。
+若需要限制访问，可在 Vercel 项目中配置访问保护。
 
 参考：https://vercel.com/docs/builds/configure-a-build
