@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#14262b"><meta name="description" content="走入云海仙宗。自由环绕九重群山，沿石阶与廊桥探索山门、书院和天阙主殿。"><title>云海仙宗 · 山海漫游</title></head><body>
+<div id="scene" aria-label="云海仙宗三维场景" tabindex="0"></div><div class="vignette"></div>
+<header><div class="brand"><span class="seal">云<br>海</span><div><p class="eyebrow">CLOUD SEA SANCTUARY</p><h1>云海仙宗<span>山海漫游</span></h1></div></div><div class="top-actions"><span id="status">正在入山</span><button id="help" aria-label="操作指南">?</button><button id="full" aria-label="全屏">⛶</button></div></header>
+<section class="place"><div class="rule"></div><p id="place-index">序 · 山海之间</p><h2 id="place-name">九重云阙</h2><p id="place-desc">循山势而上，访云中仙境。</p></section>
+<aside class="settings"><label>画质<select id="quality" aria-label="画质"><option value="balanced">均衡</option><option value="high">精细</option><option value="low">流畅</option></select></label><label class="toggle"><input id="clouds" type="checkbox" checked><span>山间云雾</span></label><button id="home">↗ 返回全景</button></aside>
+<nav id="destinations" aria-label="观景点"></nav>
+<footer><div class="modes" role="group" aria-label="查看模式"><button id="orbit" class="active">环绕观景</button><button id="walk">步行探索</button></div><p id="controls">拖动旋转 · 滚轮缩放 · 右键平移</p><span class="edition">九重群山 / 一境千重</span></footer>
+<div id="crosshair" hidden>+</div><div id="walk-hint" hidden>点击画面进入漫游 · Esc 释放鼠标</div><div id="toast" role="status"></div>
+<div id="joystick" hidden><div id="stick"></div></div>
+<div id="loading"><div class="loading-content"><span class="loading-seal">山海</span><p class="eyebrow">A JOURNEY ABOVE THE CLOUDS</p><h2>入山，见云海。</h2><p id="loading-text">正在准备三维山河</p><div class="progress"><i id="progress"></i></div><small>首次载入需要下载三维模型，请稍候</small><button id="retry" hidden>重新载入</button></div></div>
+<dialog id="guide"><button id="close-help" aria-label="关闭操作指南">×</button><p class="eyebrow">EXPLORER’S GUIDE</p><h2>行于山海之间</h2><h3>环绕观景</h3><p>鼠标拖动旋转，滚轮缩放，右键拖动平移。触屏单指旋转，双指缩放与平移。</p><h3>步行探索</h3><p>点击场景捕获鼠标，移动鼠标转头。<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 或方向键移动，<kbd>Shift</kbd> 加速，<kbd>Esc</kbd> 释放鼠标。触屏使用左侧摇杆移动、右侧拖动转头。</p><p>步行遵循地面高度，墙体和栏杆会阻挡前进；悬崖边缘有防跌落保护。快捷观景点可以随时带你前往另一处平台。</p><button id="start-explore">开始探索</button></dialog>
+<script type="module" src="/src/main.js"></script></body></html>

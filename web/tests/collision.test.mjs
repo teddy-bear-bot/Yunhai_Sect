@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {Mesh,BoxGeometry,MeshBasicMaterial,DoubleSide,Vector3} from 'three';import {Walker} from '../src/collision.js';
+function box(w,h,d,x,y,z){const o=new Mesh(new BoxGeometry(w,h,d),new MeshBasicMaterial({side:DoubleSide}));o.position.set(x,y,z);o.updateMatrixWorld();return o;}
+test('walks across floor at a stable eye height',()=>{const w=new Walker([box(20,1,20,0,-.5,0)]);w.place(new Vector3(0,0,0));w.move(new Vector3(3,0,0));assert.ok(w.feet.x>2.9);assert.ok(Math.abs(w.feet.y)<.01);});
+test('cannot cross a wall even in one large frame',()=>{const w=new Walker([box(20,1,20,0,-.5,0),box(.3,8,10,3,4,0)]);w.place(new Vector3(0,0,0));w.move(new Vector3(8,0,0));assert.ok(w.feet.x<2.3);});
+test('cliff guard keeps player on narrow platform',()=>{const w=new Walker([box(6,1,6,0,-.5,0)]);w.place(new Vector3(0,0,0));w.move(new Vector3(10,0,0));assert.ok(w.feet.x<2.4);assert.equal(w.blocked,'ledge');});
+test('climbs a normal step and refuses a tall block',()=>{const w=new Walker([box(20,1,20,0,-.5,0),box(4,1,4,4,.5,0),box(3,6,4,8,3,0)]);w.place(new Vector3(0,0,0));w.move(new Vector3(4,0,0));assert.ok(w.feet.y>.9);w.move(new Vector3(6,0,0));assert.ok(w.feet.x<6.5);});

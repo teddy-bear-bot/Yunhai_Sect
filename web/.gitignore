@@ -1,0 +1,7 @@
+node_modules/
+dist-web/
+.openai/*local*
+*.tgz
+qa-*.png
+browser-check.json
+dist/

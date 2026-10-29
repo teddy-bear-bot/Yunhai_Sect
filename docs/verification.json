@@ -1,0 +1,39 @@
+{
+  "file": "/Users/dingliyang/Documents/Codex/2026-09-15/hatch-pet-users-dingliyang-codex-skills-2/outputs/cloud-sect/云海仙宗.blend",
+  "scene": "云海仙宗 | CLOUD SEA SANCTUARY",
+  "camera": "01 · 云海仙宗 / Establishing",
+  "objects": 985,
+  "resolution": [
+    1920,
+    1080,
+    100
+  ],
+  "cloud_domains": 43,
+  "hidden_clouds": [],
+  "samples": 64,
+  "files": {
+    "云海仙宗-云层精修.png": {
+      "size": 2765190,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "云海仙宗-主殿近景.png": {
+      "size": 3123435,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "云海仙宗-山门检查.png": {
+      "size": 1977510,
+      "dimensions": [
+        1440,
+        810
+      ]
+    },
+    "blend_bytes": 32173557
+  },
+  "visual_review": "全景云层、主殿近景与无云山门检查图已检查；入山阶上的树已移开。"
+}

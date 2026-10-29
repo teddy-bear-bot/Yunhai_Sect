@@ -1,0 +1,12 @@
+[
+  {
+    "file": "blender/\u4e91\u6d77\u4ed9\u5b97.blend",
+    "sha256": "eee42e85f4deec6e721f24c81696b21504686da376bb77e08f436a7e444c5ed1",
+    "bytes": 32173557
+  },
+  {
+    "file": "web/public/assets/sanctuary.glb",
+    "sha256": "88b3aaaef0e3210dccb4bc8b9ff24922ae94bebf646417dd87c285f54cd5e477",
+    "bytes": 2948596
+  }
+]

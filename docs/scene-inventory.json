@@ -1,0 +1,22 @@
+{
+  "scene": "云海仙宗 | CLOUD SEA SANCTUARY",
+  "objects": 985,
+  "meshes": 913,
+  "vertices": 1836308,
+  "cameras": [
+    "01 · 云海仙宗 / Establishing",
+    "02 · 天阙主殿 / Architectural detail",
+    "03 · 入山问道 / Gate"
+  ],
+  "materials": 22,
+  "missing_material_objects": [],
+  "engine": "CYCLES",
+  "device": "GPU",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "samples": 64,
+  "blender_version": "5.2.3 LTS",
+  "mcp": "mcp-for-blender 2.2.4 / execute_blender_code"
+}
